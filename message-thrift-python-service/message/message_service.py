@@ -38,6 +38,7 @@ if __name__ == '__main__':
     handle = MessageHandle()
     processor = MessageService.Processor(handle)
     # 监听9090端口
+    # 使用docker来进行服务间的通信,不能写localhost
     transport = TSocket.TServerSocket(None, 9090)
     # 传输方式 帧传输,报文一帧一帧传输
     tfactory = TTransport.TFramedTransportFactory()
