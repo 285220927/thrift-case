@@ -1,9 +1,9 @@
 thrift:
   user:
-    ip: 127.0.0.1
+    ip: user-service
     port: 7911
   message:
-    ip: 127.0.0.1
+    ip: message-service
     port: 9090
 
 timeout:
@@ -12,10 +12,11 @@ timeout:
 
 spring:
   redis:
-    host: localhost
+    host: ${redis.address}
     port: 6379
     timeout: 30000
+    password: redis
   application:
-    name: user-edge-service
+    name: user-edge-services
 server:
   port: 8082

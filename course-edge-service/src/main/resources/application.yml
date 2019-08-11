@@ -5,7 +5,7 @@ spring:
     application:
       name: course-edge-service
     registry:
-      address: zookeeper://127.0.0.1:2181
+      address: zookeeper://${zookeeper.address}:2181
     scan: com.courses.course_edge
   jackson:
     default-property-inclusion: non_null

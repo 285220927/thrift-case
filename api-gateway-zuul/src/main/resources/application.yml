@@ -4,10 +4,10 @@ zuul:
   routes:
     course:
       path: /course/**
-      url: http://localhost:8081/course
+      url: http://course-edge-service:8081/course
       # 使用eureka可以配置service-id实现负载均衡,这里使用url
       # service-id: course-edge-service
     user:
       path: /user/**
-      url: http://localhost:8082/user
+      url: http://user-edge-service:8082/user
       # service-id: user-edge-service

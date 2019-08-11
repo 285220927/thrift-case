@@ -9,7 +9,6 @@
 
 package com.user.controller;
 
-import com.thrift.message.MessageService;
 import com.thrift.user.UserInfo;
 import com.thrift.user.dto.UserDTO;
 import com.user.redis.RedisClient;
